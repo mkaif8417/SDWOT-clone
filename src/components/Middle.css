@@ -1,0 +1,32 @@
+/* Middle secton start here */
+.hero {
+    height: 100vh;
+    background-image: url('../assets/imgs/bg.jpg');
+   
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: large;
+
+}
+
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}

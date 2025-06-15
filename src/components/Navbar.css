@@ -1,0 +1,72 @@
+
+/* Make navbar a flex container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #fbfdfd;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Styling to navbars list item  */
+.nav-list li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.nav-list li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6F4E37;
+    transition: width 0.3s ease;
+}
+
+.nav-list li a:hover::after {
+    width: 100%;
+}
+
+.nav-list li a:hover {
+    color: #6F4E37;
+}
+
+/*End of Styling to navbars list items  */
+.logo-container li {
+    list-style: none;
+}
+
+/* Navbar Ends here */
+/* Styling to the logo */
+.logo {
+    height: 51px;
+    margin: 10px;
+}
+
+/* End of Styling to the logo */
+
