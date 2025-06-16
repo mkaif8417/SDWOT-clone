@@ -1,72 +1,77 @@
-
-/* Make navbar a flex container */
+/* Sticky Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-    background-color: #fbfdfd;
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
-    border-radius: 5px;
-    border: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fbfdfd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 30px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
 }
 
+/* Logo */
+.logo {
+  height: 50px;
+}
+
+/* Navigation List */
 .nav-list {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-/* Styling to navbars list item  */
-.nav-list li {
-    display: inline-block;
-    margin: 0 15px;
-    position: relative;
-}
-
+/* Links */
 .nav-list li a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 0;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+  transition: color 0.3s;
 }
-
+/* This is for underline when hover someone */
 .nav-list li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #6F4E37;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6F4E37;
+  transition: width 0.3s ease;
 }
 
 .nav-list li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .nav-list li a:hover {
-    color: #6F4E37;
+  color: #6F4E37;
 }
 
-/*End of Styling to navbars list items  */
-.logo-container li {
-    list-style: none;
+/* SignIn Button */
+.sign-button {
+  border: 1px solid #6F4E37;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #6F4E37;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Navbar Ends here */
-/* Styling to the logo */
-.logo {
-    height: 51px;
-    margin: 10px;
+.sign-button:hover {
+  background-color: #6F4E37;
+  color: white;
 }
+/* For existing page used Navlink and givend classname =isactive */
+.isActive  {
+  color: white;
+  font-weight: bold;
+  border-top: 2px solid black;
 
-/* End of Styling to the logo */
-
+}
