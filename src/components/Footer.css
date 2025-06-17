@@ -52,3 +52,54 @@
   color: teal;
   font-weight: bold;
 }
+
+/* Default styles (desktop) - already given */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer-section {
+    flex: 1 1 45%;
+    min-width: auto;
+    margin: 10px 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    gap: 5px;
+  }
+}
+
+/* Phones (max-width: 767px) */
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer-section p {
+    justify-content: center; /* center icon+text */
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    gap: 8px;
+  }
+}

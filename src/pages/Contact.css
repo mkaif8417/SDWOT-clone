@@ -112,3 +112,63 @@
   font-weight: bold;
 }
 /* End od location */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .contact-description {
+    width: 70%;
+    font-size: 15px;
+  }
+
+  .contact-form {
+    width: 70%;
+    padding: 25px;
+  }
+
+  .company-info {
+    width: 80%;
+    padding: 20px 25px;
+    font-size: 15px;
+  }
+}
+
+/* Phones (max-width: 767px) */
+@media (max-width: 767px) {
+  .contact-heading {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .contact-description {
+    width: 90%;
+    font-size: 14px;
+    margin: 10px auto 20px;
+  }
+
+  .contact-form {
+    width: 90%;
+    padding: 20px 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  #submit {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .company-info {
+    width: 90%;
+    padding: 15px 20px;
+    font-size: 14px;
+    margin: 30px auto;
+  }
+
+  .company-info h2 {
+    font-size: 18px;
+  }
+}

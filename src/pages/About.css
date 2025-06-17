@@ -28,5 +28,63 @@
     max-width: 80%;
     font-family: sans-serif;
 }
-/* 
- */
+
+ /* Default styles (desktop) - already given */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    height: auto; /* Let height grow naturally */
+  }
+
+  .header {
+    height: auto;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    flex: none;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .left p {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Phones (max-width: 767px) */
+@media (max-width: 767px) {
+  .container {
+    height: auto;
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 15px 0;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .left p {
+    max-width: 95%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+  }
+}

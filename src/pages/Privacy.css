@@ -1,0 +1,175 @@
+.p-container {
+    height: 80vh;
+    background-image: url('../assets/imgs/cubes.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+}
+.child-container {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    max-width: 600px;
+    padding: 40px 30px;
+    text-align: center;
+    height: 40%;
+}
+
+
+
+.child-container h1 {
+    font-size: 2.5rem;
+    font-family: 'sans-serif';
+    color: gray;
+    border-bottom: 2px solid #3498db;
+    font-weight: normal;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+/* middle section css */
+.middle-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.middle-section h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-top: 30px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+}
+
+.middle-section h3 {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-top: 20px;
+}
+
+.middle-section p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.middle-section ul {
+  margin: 15px 0 15px 20px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.middle-section li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .middle-section {
+    padding: 20px;
+  }
+
+  .middle-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .middle-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .middle-section p, .middle-section li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets (769px to 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .p-container {
+    height: 70vh;
+    padding: 20px;
+  }
+
+  .child-container {
+    width: 70%;
+    height: auto;
+    padding: 35px 25px;
+  }
+
+  .child-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .middle-section {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px 30px;
+  }
+
+  .middle-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .middle-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .middle-section p, .middle-section li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .p-container {
+    height: auto;
+    padding: 15px;
+    background-position: center center;
+  }
+
+  .child-container {
+    width: 90%;
+    height: auto;
+    padding: 25px 20px;
+  }
+
+  .child-container h1 {
+    font-size: 1.8rem;
+    padding-bottom: 4px;
+  }
+
+  .middle-section {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 15px 20px;
+  }
+
+  .middle-section h2 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+
+  .middle-section h3 {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .middle-section p, .middle-section li {
+    font-size: 0.9rem;
+  }
+
+  .middle-section ul {
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+}

@@ -1,0 +1,149 @@
+/* Container styling */
+.signin-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2980b9, #6dd5fa);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form box styling */
+.signin-form {
+  background-color: #ffffff;
+  padding: 40px 35px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.signin-form h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #34495e;
+}
+
+/* Labels */
+.signin-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #34495e;
+  font-weight: 600;
+}
+
+/* Inputs */
+.signin-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 25px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.signin-form input:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+/* Button */
+.signin-form button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #2980b9;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.signin-form button:hover {
+  background-color: #1f6391;
+}
+
+/* Links below the form */
+.signin-links {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.signin-links a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.signin-links a:hover {
+  color: #1c5a8d;
+  text-decoration: underline;
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .signin-container {
+    padding: 15px;
+  }
+
+  .signin-form {
+    max-width: 350px;
+    padding: 35px 25px;
+  }
+
+  .signin-form h2 {
+    font-size: 1.8rem;
+  }
+
+  .signin-form input {
+    font-size: 0.95rem;
+    padding: 11px 14px;
+  }
+
+  .signin-form button {
+    font-size: 1rem;
+    padding: 13px 0;
+  }
+}
+
+/* Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .signin-container {
+    padding: 10px;
+  }
+
+  .signin-form {
+    max-width: 100%;
+    padding: 30px 20px;
+    border-radius: 8px;
+  }
+
+  .signin-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .signin-form input {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+  }
+
+  .signin-form button {
+    font-size: 0.95rem;
+    padding: 12px 0;
+  }
+
+  .signin-links {
+    font-size: 0.9rem;
+  }
+}
+

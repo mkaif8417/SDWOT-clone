@@ -30,3 +30,55 @@
     margin-bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
+
+/* Default styles (desktop) - already given */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero {
+    background-position: center center;
+    background-size: cover;
+    height: 80vh; /* a bit shorter */
+    padding: 20px;
+  }
+
+  .hero-content {
+    padding: 20px;
+    font-size: medium;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+}
+
+/* Phones (max-width: 767px) */
+@media (max-width: 767px) {
+  .hero {
+    background-position: center center;
+    background-size: cover;
+    height: 60vh; /* smaller height */
+    padding: 15px;
+  }
+
+  .hero-content {
+    padding: 15px;
+    font-size: smaller;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+}
